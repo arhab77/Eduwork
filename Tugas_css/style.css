@@ -1,0 +1,77 @@
+body{
+    background-color: #fafafa;
+    font-family: sans-serif;
+}
+.container{
+    width: 800px;
+    margin: 0px auto;
+    padding-top: 100px;
+    display: flex;
+}
+
+.gambar{
+    width: 50%;
+}
+
+.img-hp{
+    width: 100%;
+}
+
+.card-wripper{
+    width: 50%;
+}
+
+.card{
+    border-style: solid;
+    border-color: #f0f0f0;
+    border-width: 2px;
+    text-align: center;
+    background-color: white;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.ig{
+    width: 180px;
+}
+
+.form{
+    margin-top: 30px;
+}
+
+.input{
+    width: 285px;
+    height: 30px;
+    border: 2px solid grey;
+    padding: 4px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.btn{
+    background-color: #0095f6;
+    border: 0px solid transparent;
+    margin-top: 20px;
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    color: white;
+}
+
+.fb{
+    color: #01017a;
+    text-decoration: none;
+}
+
+.forgot{
+    color: gray;
+
+    text-decoration: none;
+    font-size: 12px;
+    margin-top: 30px;
+}
+
+.signup{
+    color: #0095f6;
+    text-decoration: none;
+}
