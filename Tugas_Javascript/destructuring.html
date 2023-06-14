@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //destructuring array
+        const listSiswa = ["Budi","Dani","Deni","Paijo","Seno","Bella"];
+
+        const [Siswa1, Siswa2, Siswa3, ...Siswalainnya] = listSiswa;
+        console.log(Siswa1,Siswa2,Siswa3,Siswalainnya);
+
+        const Siswa = {
+            nama: "Budi",
+            NIM: "102030",
+            jurusan: "Teknik Informatika",
+            matkul: {
+                nama_matkul: "System Analyst",
+                pengajar: "Satya"
+            }
+        };
+
+        //destructuring object
+        const {nama, jurusan, matkul:{nama_matkul}, ...lainnya} = Siswa;
+        console.log(nama, jurusan, nama_matkul, lainnya);
+
+        //destructuring function
+        function printSiswa({nama, jurusan, matkul:{nama_matkul}, ...lainnya}){
+            console.log(nama, jurusan, nama_matkul, lainnya)
+        }
+        printSiswa(Siswa);
+
+        //destructuring default value
+        function printSiswa2({nama, jurusan, semester = "3", matkul:{nama_matkul}, ...lainnya}){
+            console.log(nama, jurusan, semester, nama_matkul, lainnya)
+        }
+        printSiswa2(Siswa);
+
+        //destructuring alias
+        function printSiswa3({nama, jurusan:jrs, matkul:{nama_matkul}, ...lainnya}){
+            console.log(nama, jrs, nama_matkul, lainnya)
+        }
+        printSiswa3(Siswa);
+    </script>
+</body>
+</html>
