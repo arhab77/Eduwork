@@ -1,0 +1,10 @@
+.container-fluid .container{
+    background-color:crimson;
+    padding: 10px;
+}
+.card-img-top{
+    height: 250px;
+}
+/* .card-text{
+    height: 100px;
+} */
